@@ -1,0 +1,9 @@
+ro.build.product=Newcastle                              # Company Given Codename for the Device.
+ro.product.board=S98117AA1                              # The Board Name for Build.
+ro.product.brand=T-Mobile                               # The Brand and The Manufacturer
+ro.product.manufacturer=Wingtech                        # can be of the Same Name.
+ro.product.name=Newcastle                               # The Device Name and/or The Codename
+ro.product.device=Newcastle                             # we will be using.
+ro.product.model=TMRVL4G                                # A Nickname, we will ignore it.
+ro.board.platform=mt6765                                # The Chipset Platform of the Project.
+ro.product.cpu.abi=arm64-v8a                            # Shows if the device is 6-bit or 32-bit.
