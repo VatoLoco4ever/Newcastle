@@ -14,10 +14,46 @@
                          Display	1600X720 pixels
                    Camera (Back)	9.7 MP, 3840x2160, f/3.38 mm
                   Camera (Front)	5.0 MP, 2592x1944, f/2.30 mm
-#
-# Copyright (C) 2022 The Android Open Source Project
-# Copyright (C) 2022 SebaUbuntu's TWRP device tree generator
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-```
+
+#  Building
+
+#  Basic instructions. From there you'll need to research.
+
+#  Get started with https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp/tree/twrp-11
+
+#  To get started with AOSP sources to build TWRP, you'll need to get familiar with Git and Repo.
+
+#  To initialize your local repository using the AOSP trees to build TWRP, use a command like this:
+
+   repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
+
+#  To initialize a shallow clone, which will save even more space, use a command like this:
+
+   repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
+
+#  Then to sync up:
+
+   repo sync 
+   
+#  Or try a bit faster sync: 
+
+   repo sync --force-sync -j2 --current-branch --no-clone-bundle --no-tags
+   
+#  Add this device tree to device/wingtech/Newcastle
+
+   mkdir -p device/wingtech && cd device/wingtech
+   git clone https://github.com/VatoLoco4ever/Newcastle.git
+   cd ../..
+   
+#  Try an eng build.
+   
+   export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_Newcastle-eng
+   make -j2 bootimage
+   
+#  You should now be able to flash 
+   
+   cd out/target/product/Newcastle
+   fastboot flash boot boot.img
+
+   
+   
