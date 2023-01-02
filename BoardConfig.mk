@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/wingtech/Newcastle
+DEVICE_PATH := /device/wingtech/Newcastle
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
