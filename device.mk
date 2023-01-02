@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := /device/wingtech/Newcastle/twrp_Newcastle
+LOCAL_PATH := device/wingtech/Newcastle/twrp_Newcastle
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
