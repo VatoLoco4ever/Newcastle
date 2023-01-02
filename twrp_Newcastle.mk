@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from Newcastle device
-$(call inherit-product, device/wingtech/Newcastle/device.mk)
+$(call inherit-product, /device/wingtech/Newcastle/device.mk)
 
 PRODUCT_DEVICE := Newcastle
 PRODUCT_NAME := twrp_Newcastle
