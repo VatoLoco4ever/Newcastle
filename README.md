@@ -1,4 +1,4 @@
-#          Android device tree for T-Mobile TMRVL4G (Newcastle)
+#          Android device tree for T-Mobile REVVL V 4G (Newcastle)
 
 ```                        Basic	Spec Sheet
                         Codename	Newcastle
