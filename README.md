@@ -3,7 +3,7 @@
 ```                        Basic	Spec Sheet
                         Codename	Newcastle
                      Device name	REVVL V
-                           Model  TMRVL4G
+                           Model        TMRVL4G
                              CPU	Octa-core
                          Chipset	MediaTek MT6765
                              GPU	PowerVR Rogue GE8320
