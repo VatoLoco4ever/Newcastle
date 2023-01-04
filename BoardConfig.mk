@@ -78,7 +78,7 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := kernel
 TARGET_KERNEL_CONFIG := Newcastle_defconfig
-TARGET_KERNEL_SOURCE := wingtech/Newcastle/prebuilt/kernel
+TARGET_KERNEL_SOURCE := kernel/wingtech/Newcastle
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
